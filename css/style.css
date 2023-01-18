@@ -1,0 +1,144 @@
+/* Псевдоэлементы и псевдоклассы */
+
+a.lesson {
+    color: black;
+    text-decoration: none;
+}
+
+a.lesson:visited {
+    color: turquoise;
+}
+
+a.lesson:hover {
+    color: red;
+}
+
+a.lesson:active {
+    color: green;
+}
+
+a.lesson:focus {
+    font-weight: bold;
+}
+
+p.lesson::first-letter {
+    font-size: 30px;
+}
+
+p.lesson::first-line {
+    text-decoration: underline;
+}
+
+p.lesson::selection {
+    background-color: green;
+    color: turquoise;
+}
+
+h3.lesson::before {
+    content: "This is ";
+    text-decoration: underline;
+}
+
+h3.lesson::after {
+    content: " channel";
+    text-transform: uppercase;
+}
+
+.lessont1 li:first-child {
+    color: red;
+}
+
+.lessont1 li:last-child {
+    color: blue;
+}
+
+.lessont2 li:nth-child(even) {
+    color: red;
+}
+
+.lessont2 li:nth-child(odd) {
+    color: blue;
+}
+
+.lessont3 li:nth-child(2n) {
+    color: yellow;
+}
+
+.lessont3 li:nth-child(2n+1) {
+    text-transform: uppercase;
+}
+
+span.test3,
+div.test3 {
+    border: 1px solid red;
+    margin: 10px;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+}
+
+#test31 {
+    display: inline;
+
+}
+
+/* Позиционирование и размеры */
+
+h4.test4 {
+    border: 1px solid black;
+}
+
+div.test4 {
+    border: 10px solid red;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: sticky
+}
+
+/* Тема 5 */
+
+.ex5 li {
+    font-size: 18px;
+}
+
+div.ex5 {
+    background: rgb(143, 227, 255);
+    color: black;
+    width: 300px;
+    height: 100px;
+    overflow: hidden;
+}
+
+/* Тема 6 */
+
+.wrapper
+.wrapper2
+.item{
+    padding: 20px;
+    color: white;
+}
+
+.wrapper {
+    background-color: grey;
+}
+
+.wrapper2 {
+    background-color: green;
+}
+
+.item1{
+    background-color: crimson;
+    float: right;
+}
+
+.item2{
+    background-color: cyan;
+    float: left;
+}
+
+.item3{
+    background-color: purple;
+}

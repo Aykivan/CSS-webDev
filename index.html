@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS | webDev</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>CSS webDev</h1>
+
+    <h2>1. Псевдоэлементы и псевдоклассы</h2>
+
+    <h3>1.1 Специфичность селекторов</h3>
+    <ul>
+        У каждого элемента есть свой вес. По этой причине некоторые из них применяются
+        чаще других.
+        <li>1 - element/pseudo-element</li>
+        <li>10 - class/attribute-pseudo-class</li>
+        <li>100 - ID</li>
+        <li>1000 - inline style</li>
+        Проще говоря, у эл-та a, p, h вес будет 1. А ID и inline style
+        весят больше всего, по этой причине они являются не желательными и
+        редко применяются.
+    </ul>
+
+    <a class="lesson" href=" https://www.youtube.com/@YauhenKavalchuk">webDev YouTube channel</a>
+    <hr>
+    <p class="lesson">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam commodi
+        repellat vitae alias reiciendis, accusantium explicabo beatae iure
+        excepturi? Voluptates tenetur placeat enim blanditiis quis molestiae
+        debitis iste quo odio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam commodi
+        repellat vitae alias reiciendis, accusantium explicabo beatae iure
+        excepturi? Voluptates tenetur placeat enim blanditiis quis molestiae
+        debitis iste quo odio?
+    </p>
+    <hr>
+
+    <h3 class="lesson">webDev</h3>
+    <hr>
+
+    <ul class="lessont1">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+    </ul>
+    <hr>
+
+    <ul class="lessont2">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+    </ul>
+    <hr>
+
+    <ul class="lessont3">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+    </ul>
+    <hr>
+
+    <ul>
+        Псевдоклассы для стилизации ссылок, одно двоеточие:
+        <li>hover - срабатывает при наведении</li>
+        <li>visited - работает только с сылками, после первого посещения</li>
+        <li>active - работвет при нажатии, можно применять к любым активным эл-там</li>
+        <li>focus - работает при выделении ссылки клавишей Tab</li>
+    </ul>
+
+    <ul>
+        Псевдоэлементы для стилизации фрагментов текста, два двоеточия:
+        <li>first-letter - работа с первым эл-том</li>
+        <li>first-line - работы с первой строкой</li>
+        <li>selection - работа с текстом при его выделении, не влияет на размер</li>
+        <li>before - позволяет работать с областью перед обьектом</li>
+        <li>after - позволяет работать с областью после обьектом</li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <ul>
+        Работа с таблицами:
+        <li>li:first-child - первый элемент</li>
+        <li>li:last-child - последний</li>
+        <li>li:nth-child() - работа с опрделенными эл-ми
+            <ul>
+                <li>even - четные эл-ты</li>
+                <li>odd - не четные</li>
+                <li>№Эл. - конкретная строка (просто ее номер)</li>
+                <li>№Эл.n - каждый энный эл-т (ее номер + n)</li>
+                Так же можно ввести в скобках + n, число от которого начнется
+                отсчет.
+            </ul>
+        </li>
+    </ul>
+
+    <h2>2. Каскадность и наследование</h2>
+
+    <p>Существуют ряд правил для применения стилей.</p>
+    <ul>
+        <li>Если эл-ты имеют одинаковый вес, то преобладать будет тот, что
+            указан ниже в списке каскадных таблиц - CSS.</li>
+        <li>К эл-ту будут применены те стили, специфичность которых больше</li>
+        <li>!important - позволяет гарантировать применение какого-либо
+            стиля с данной пометкой. Однако это считается плохой практикой,
+            которую лучше не применять.</li>
+    </ul>
+
+    <p>
+        Наследованность - это способность потомков, перенимать все примененные
+        к их родителю стили. Не все стили являются наследуемыми.
+        <br>
+        Если же мы хотим присвоить значение стиля родителя к потомку, мы можем
+        прописать тот показатель, который нам нужен и присвоить ему значение
+        <strong>inherit</strong>. На практике же он применяется достаточно редко.
+    </p>
+
+    <h3>2.1 Браузерная верстка</h3>
+    <p>
+        У каждого браузера установлен ряд параметров, таких, как отступы, размер шрифта
+        и т.д.
+        <br>
+        Для того, чтобы сделать ресурс кросплатформенным существует понятие - Браузерная
+        верстка.
+    </p>
+    <ul>
+        Она включает в себя два основных подхода:
+        <li>Normalize - все параметры, для всех браузеров задаются одинаковыми.</li>
+        <li>Reset - все установленные по умолчанию пар-ры сбрасываются.</li>
+    </ul>
+    <p>
+        Для того, чтобы использовать один из этих принципов, неоюходимо
+        счать стили для браузеров и установить их отдельныи файлом, добавив
+        ссылку на них перед ссылками на остальные стили в HTML.
+    </p>
+
+    <h2>3. Блочная модель и отступы</h2>
+
+    <h4>Lorem ipsum dolor, sit amet <span class="test3">consectetur</span> adipisicing elit. Repellendus magnam,
+        deserunt porro
+        repellat esse quis molestiae facilis, similique sint ab aliquid placeat maxime suscipit iure obcaecati in cumque
+        odit itaque.</h4>
+    <h4>Lorem ipsum dolor sit, amet <div class="test3">consectetur</div> adipisicing elit. Voluptates veniam repudiandae
+        sit nisi eum
+        odio nulla consequuntur ducimus asperiores beatae quia hic dignissimos pariatur, corrupti molestias et
+        assumenda. Dicta, eum.</h4>
+    <h4>Lorem ipsum dolor sit amet <div class="test3" id="test31">consectetur</div> adipisicing elit. Incidunt qui
+        nisi architecto
+        quidem deleniti totam non officiis necessitatibus inventore dolor quis sit mollitia recusandae vel aliquid, modi
+        similique unde facere.</h4>
+
+    <ul>
+        Свойства:
+        <li>margin - отступы от других тегов</li>
+        <li>padding - внутренний отступ от границ</li>
+        Так же к ним применимы top bottom left right. Однако ко строчным эл-там не применимы отступы margin-top/bottom.
+        Существует понятие - схлопавание отступов. Оно представляет собой следующее: если рядом стоят два эл-та с
+        разными значениями margin, то можду ними будет расстояние равное максимальному.
+        <li>display - присваивает эл-ту тот или иной формат (блок/строка)</li>
+        <li>box-sizing: border-box - позволяет сжимать все размеры до заданных width и hight</li>
+    </ul>
+
+    <h2>4. Позиционирование и размеры</h2>
+
+    <h4 class="test4">
+        Lorem ipsum dolor sit amet
+        <div class="test4">ELEMENT1</div> consectetur, adipisicing elit. Aspernatur, exercitationem accusantium atque
+        deleniti et repellendus quam quaerat repudiandae autem obcaecati quasi dicta quo doloremque minus quae
+        in nihil quos sapiente.
+    </h4>
+
+    <ul>
+        Свойства: position
+        <li>static - значение по умолчанию</li>
+        <li>relative - относительное позиционирование, эл-т формирует новый поток и его можно двигать</li>
+        <li>absolute - основной поток теряет связь с элементом и его место заполняется</li>
+        <li>fixed - позиция всегда будет отсчитываться от края окна браузера</li>
+        <li>sticky - применяется очень редко так как не поддерживается всеми браузерами</li>
+    </ul>
+
+    <ul>
+        Размеры:
+        <li>widtd - ширина</li>
+        <li>height - высота</li>
+        При данных параметрах блок не меняет своих размеров и не подстраивается под контект.
+        Однако если мы придадим данным значениям приставки:
+        <li>min-width - в таком случае размер будет подгонятся под содиржимое и при этом не будет меньше заданного</li>
+        <li>max-height - задает максимальное значение на которое эл-т может растянутся</li>
+
+    </ul>
+
+    <h2>5. Единицы, переполнение и уровни элементов</h2>
+
+    <ul>
+        В CSS существует два основных вида размеров:
+        <li>Относительные - percentage
+            <ul>
+                <li>% - изначально все равно 100%</li>
+                <li>em</li>
+                <li>rem - отталкивается от базовой величины</li>
+            </ul>
+        </li>
+        <li>Абсолютные - px</li>
+    </ul>
+
+    <ul class="ex5">
+        <li>First level
+            <ul>
+                <li>Second level
+                    <ul>
+                        <li>Third level
+                            <ul>
+                                <li>Fourth level</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="ex5">element Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae nulla, aliquid dolorem
+        impedit eligendi quam, voluptate nobis saepe harum culpa voluptates aperiam ex blanditiis nostrum, nesciunt
+        totam laboriosam minima excepturi?</div>
+
+    <ul>
+        Свойство overflow - переполнение:
+        <li>auto - не изменяя размер добавляет ползунок, с помощью которого можно прокручивать эл-т</li>
+        <li>scroll - элемент прокрутки будет всегда отображатсяр</li>
+        <li>hidden - обрезает весь выходящий за пределы контент</li>
+        <li>overflow-x - применяет изменения касаемые относительно горизонта</li>
+        <li>overflow-y - вертикали</li>
+    </ul>
+
+    <h2>6. Плавающие единицы и уровни элементов</h2>
+    <p>
+        Элемент float - обтекаемость слева или справа, на нем основанны старые сайты, сейча на его замену пришел более
+        актульный подход, однако знать о нем необходимо.
+    </p>
+
+    <div class="wrapper">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+    </div>
+    <div class="wrapper2"></div>
+
+</body>
+
+</html>
