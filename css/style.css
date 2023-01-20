@@ -114,9 +114,7 @@ div.ex5 {
 
 /* Тема 6 */
 
-.wrapper
-.wrapper2
-.item{
+.wrapper .wrapper2 .item {
     padding: 20px;
     color: white;
 }
@@ -129,16 +127,57 @@ div.ex5 {
     background-color: green;
 }
 
-.item1{
+.item1 {
     background-color: crimson;
     float: right;
 }
 
-.item2{
+.item2 {
     background-color: cyan;
     float: left;
 }
 
-.item3{
+.item3 {
     background-color: purple;
+}
+
+/* Тема 7 */
+
+h3.ex7 {
+    font-family: Arial, sans-serif;
+}
+
+h4.ex7 {
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+/*
+@font-face {
+    font-family: ;
+    Разрешение файла со шрифтом через точку 
+    src: url("/адресс где содержится шрифт.ttf") format("truetype");
+    src: url("/адресс где содержится шрифт.woff") format("woff");
+    src: url("/адресс где содержится шрифт.woff2") format("woff2");
+    src: url("/адресс где содержится шрифт.otf") format("olentype");
+    font-weight: 500; - стандартное значение
+    font-style: normal;
+}
+
+Самый правильный вариант записи:
+    font-family: "Шрифт который хотим", Безопасный шрифт№1,Безопасный шрифт№2, 
+    засечки(да/нет);
+*/
+
+p.ex7{
+    color:rgb(143, 227, 255);
+    text-decoration: underline overline line-through none; 
+    letter-spacing: 2px;
+    word-spacing: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: justify;
+    text-indent: 20px;
 }
