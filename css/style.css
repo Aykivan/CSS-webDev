@@ -171,13 +171,76 @@ h4.ex7 {
     засечки(да/нет);
 */
 
-p.ex7{
-    color:rgb(143, 227, 255);
-    text-decoration: underline overline line-through none; 
+p.ex7 {
+    color: rgb(143, 227, 255);
+    text-decoration: underline overline line-through none;
     letter-spacing: 2px;
     word-spacing: 20px;
     line-height: 30px;
     text-transform: uppercase;
     text-align: justify;
     text-indent: 20px;
+}
+
+/* Тема 8 */
+
+div.ex8 {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    margin: 20px;
+
+    border-width: 10px;
+    border-style: solid;
+    border-color: red;
+    /* border: 10px solid red; */
+
+    border-right: none;
+    border-right-style: none;
+
+    border-bottom-width: 20px;
+    border-left-color: blue;
+}
+
+.ex8 {
+    outline: 10px solid aqua;
+}
+
+button.ex8:focus,
+input.ex8:focus {
+    outline: 2px solid aqua;
+}
+
+h3.ex8s {
+    text-shadow: -5px 5px 3px red, 5px -5px 3px green;
+}
+
+.shadow {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    margin: 20px;
+
+    box-shadow: inset 1px 2xp 5px blue, -1px -2px 5px green;
+}
+
+/* Тема 9 */
+
+div.ex9 {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    margin: 20px;
+
+   /* border-radius: 15px 25px 35px 45px; */
+   border-radius: 20px/40px;
+}
+
+ul li.ex9{
+    list-style-type: disc;
+    list-style-position: outside;
+}
+
+h3.ex9 {
+    color: red;
 }
