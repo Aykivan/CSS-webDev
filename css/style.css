@@ -232,15 +232,63 @@ div.ex9 {
     background-color: grey;
     margin: 20px;
 
-   /* border-radius: 15px 25px 35px 45px; */
-   border-radius: 20px/40px;
+    /* border-radius: 15px 25px 35px 45px; */
+    border-radius: 20px/40px;
 }
 
-ul li.ex9{
+ul li.ex9 {
     list-style-type: disc;
     list-style-position: outside;
 }
 
 h3.ex9 {
     color: red;
+}
+
+/* Тема 10 */
+
+.ex10.first {
+    display: none;
+}
+
+.ex10.second {
+    /*visibility: hidden; 
+    opacity: 0; */
+    color: transparent;
+}
+
+/* Тема 11 */
+
+.ex11.fon {
+    min-height: 60vh;
+    width: 60%;
+    /* width - ШИРИНА */
+
+    /* background: gainsboro;
+    background-image: url(https://img2.akspic.ru/previews/2/9/4/1/7/171492/171492-fraktalnoe_iskusstvo-zelenyj-tkan-akva-materialnoe_svojstvo-x750.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-image: url(https://img2.akspic.ru/previews/6/5/3/1/7/171356/171356-volna-upravlyat_voditelem-voda-oblako-gidroresursy-x750.jpg);
+    background-repeat: no-repeat;
+    background-position: center;  */
+    /* background-size: 60vh 60%; */
+    /* background-attachment: fixed;
+    /* background: gainsboro url(https://img2.akspic.ru/previews/6/5/3/1/7/171356/171356-volna-upravlyat_voditelem-voda-oblako-gidroresursy-x750.jpg) 50% 50% no-repeat fixed; */
+
+    /* background: gainsboro url(https://img2.akspic.ru/previews/2/9/4/1/7/171492/171492-fraktalnoe_iskusstvo-zelenyj-tkan-akva-materialnoe_svojstvo-x750.jpg) 50% 50% no-repeat, url(https://img2.akspic.ru/previews/6/5/3/1/7/171356/171356-volna-upravlyat_voditelem-voda-oblako-gidroresursy-x750.jpg) center no-repeat; */
+
+    background: url(https://img2.akspic.ru/previews/2/9/4/1/7/171492/171492-fraktalnoe_iskusstvo-zelenyj-tkan-akva-materialnoe_svojstvo-x750.jpg) center no-repeat, url(https://img2.akspic.ru/previews/6/5/3/1/7/171356/171356-volna-upravlyat_voditelem-voda-oblako-gidroresursy-x750.jpg) center no-repeat;
+
+}
+
+
+
+/* Тема 12 */
+
+div.ex12.grad {
+    min-height: 60vh;
+    width: 60%;
+    /* background-image: repeating-linear-gradient(45deg, red 10px, orange 10px, orange 20px, red 20px, red 30px, orange 30px) */
+    background: radial-gradient(ellipse farthest-corner, orange, red);
 }
