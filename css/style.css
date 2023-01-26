@@ -309,18 +309,27 @@ img {
     transition: all 2s ease;
 }
 
-img:hover {
-    /* filter: blur(2px); */
-    /* filter: drop-shadow(10px 8px 14px rgba(0,0,0,0.5)); */
-    /* filter: grayscale(60%); */
-    /* filter: brightness(150%); */
-    /* filter: contrast(150%); */
-    /* filter: hue-rotate(90deg); */
-    /* filter: invert(100%); */
-    /* filter: saturate(200); */
-    /* filter:sepia(100%); */
-    filter:opacity(50%);
+/* Тема 14 */
 
+div.ex14 {
+    margin: 50px 100px;
+    border: 2px solid red;
+    width:600px;
+    height: 480px;
+    /* overflow: hidden; */
+}
 
+img.ex14 {
+    transition: all 2s ease;
+}
+
+img.ex14:hover {
+    /* transform: rotate(180deg); */
+    /* transform: scale(1.5); */
+    /* transform: translate(50px, 50px); */
+    /* transform: skew(20deg, 20deg); */
+    /* transform: rotate(10deg) scale(1.2) skew(10deg); */
+    transform: rotate(90deg);
+    transform-origin: 100px 50px;
 
 }
