@@ -379,13 +379,77 @@ img.ex14:hover {
 }
 
 @keyframes myAnimation {
-    form {transform: scale(1);}
-    50% {transform: scale(1.1); }
-    to {transform: scale(1);}
+    form {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
 }
 
 @keyframes bgChange {
-    form {background-color: aqua;}
-    50% {background-color: red;}
-    to {background-color: green;}
+    form {
+        background-color: aqua;
+    }
+
+    50% {
+        background-color: red;
+    }
+
+    to {
+        background-color: green;
+    }
+}
+
+
+/* Тема 17 */
+
+.ex17 {
+    margin: 0;
+    padding: 0;
+    height: 30vh;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+table.ex17,
+table.ex17 * {
+    border: 1px solid;
+    max-width: 900px;
+    border-collapse: collapse;
+    /* border-spacing: 10px; */
+    caption-side: top;
+    text-align: center;
+    vertical-align: center;
+    empty-cells: hide;
+    cursor: pointer;
+}
+
+/* Тема 18 */
+
+.ex18 {
+    margin: 20px;
+    font-size: 45px;
+    border: 1px black solid;
+    width: 100px;
+    min-height: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    writing-mode: vertical-lr;
+}
+
+.ex18colum {
+    column-count: 3;
+    column-rule: 1px black solid;
+    /* column-width: 700px; */
+    column-gap: 100px;
 }
