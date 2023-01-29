@@ -453,3 +453,21 @@ table.ex17 * {
     /* column-width: 700px; */
     column-gap: 100px;
 }
+
+/* Тема 19 */
+
+.ex19 {
+    padding: 10px 30px;
+    margin: 0;
+    height: 30vh;
+    background-color: lightgrey;
+    font-size: 28px;
+    font-family: monospace;
+}
+
+@media screen {
+    p.ex19 {
+        background-color: aqua;
+        
+    }
+}
